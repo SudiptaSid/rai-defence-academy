@@ -1,0 +1,33 @@
+// Testimonial One
+.testimonialOne {
+  position: relative;
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .bgCover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .owl-theme {
+    .owl-dots {
+      margin-top: 24px !important;
+      text-align: left;
+
+      @include owlDots;
+    }
+  }
+}

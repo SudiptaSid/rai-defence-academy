@@ -1,0 +1,20 @@
+// Section Title
+.sectionTitle {
+  h6 {
+    color: $navyClr;
+    font-size: $fz14;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $defenceClr;
+    margin: 0;
+  }
+
+  p {
+    margin: 12px 0 0;
+    font-size: $fz16;
+  }
+}

@@ -1,0 +1,68 @@
+// Button
+.btn {
+  display: inline-block;
+  font-size: $fz14;
+  letter-spacing: 0.5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba($blackClr, 0);
+  backface-visibility: hidden;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+  border-radius: 0;
+  border: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($whiteClr, 0.2);
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: -webkit-transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+// Primary
+.btnPrimary {
+  color: $whiteClr;
+  background-color: $primaryClr;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $whiteClr !important;
+    background-color: darken($primaryClr, 5%) !important;
+  }
+}
+
+// Secondary
+.btnSecondary {
+  color: $whiteClr;
+  background-color: $secondaryClr;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $whiteClr !important;
+    background-color: darken($secondaryClr, 5%) !important;
+  }
+}

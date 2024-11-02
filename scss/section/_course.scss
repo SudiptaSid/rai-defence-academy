@@ -1,0 +1,94 @@
+// Course Details One
+.courseDetailsOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .details {
+    h5 {
+      margin-bottom: 24px;
+      color: $titleClr;
+
+      .time {
+        font-size: 12px;
+        font-weight: 600;
+        color: $textClr;
+
+        span {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .listOne {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        width: 100%;
+        position: relative;
+        padding-left: 20px;
+
+        em {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .videoList {
+      display: flex;
+      flex-direction: column;
+
+      .videoItem {
+        position: relative;
+        padding: 10px 15px;
+        //padding-left: 34px;
+        cursor: pointer;
+
+        .customCheckbox {
+          position: absolute;
+          left: 10px;
+          top: 14px;
+          z-index: 9;
+          display: none;
+
+          .checkmark {
+            border-radius: 0;
+            width: 14px;
+            height: 14px;
+            border-width: 2px;
+            border-color: $blackClr;
+          }
+        }
+
+        .videoTitle {
+          display: block;
+          color: $blackClr;
+          font-weight: 500;
+        }
+
+        &.playing,
+        &:hover {
+          background-color: $bgLightClrThree;
+        }
+      }
+    }
+
+    + .details {
+      margin-top: 32px;
+    }
+  }
+}

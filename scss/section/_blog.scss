@@ -1,0 +1,27 @@
+// Blog One
+.blogOne {
+  padding: 100px 0;
+  background-color: $bgLightClrTwo;
+
+  @include md {
+    padding: 60px 0;
+  }
+}
+
+// Blog Details One
+.blogDetailsOne {
+  padding: 60px 0;
+
+  .imgSec {
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .sectionTitle {
+    margin-top: 32px;
+  }
+}

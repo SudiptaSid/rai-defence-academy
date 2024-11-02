@@ -1,0 +1,76 @@
+// Gap
+.gap-y1 {
+  gap: 1em 0;
+}
+
+.gap-y2 {
+  gap: 2em 0;
+}
+
+.gap-y3 {
+  gap: 3em 0;
+}
+
+// Rating
+.rating {
+  li {
+    display: inline-block;
+
+    i {
+      color: $yellowClr;
+    }
+  }
+}
+
+// List
+.listStyleOne {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+// Contact Item One
+.contactList {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $titleClr;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    em {
+      font-size: 1.5em;
+    }
+
+    p,
+    a {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Social List
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a {
+    font-size: 1.2em;
+    color: $whiteClr;
+    transition: all 100ms ease-in;
+
+    &:hover {
+      color: $primaryClr;
+    }
+  }
+}

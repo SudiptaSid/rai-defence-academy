@@ -1,0 +1,14 @@
+// Contact One
+.contactOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .contactInfo {
+    + .contactInfo {
+      margin-top: 32px;
+    }
+  }
+}

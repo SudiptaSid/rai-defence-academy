@@ -1,0 +1,56 @@
+// Tab
+.tabOne {
+  .nav-tabs {
+    border-color: $bgLightClrThree;
+
+    .nav-item {
+      .nav-link {
+        border-radius: 0;
+        color: $titleClr;
+
+        &:hover,
+        &.active {
+          color: $whiteClr;
+          background-color: $primaryClr;
+          border-color: $primaryClr;
+          border-bottom-color: $whiteClr;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 24px;
+  }
+}
+
+// Contact Info
+.contactInfo {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+
+  .icon {
+    font-size: 2em;
+    color: $primaryClr;
+  }
+
+  .info {
+    h6 {
+      color: $titleClr;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $textClr;
+
+      &:hover {
+        color: $primaryClr;
+        text-decoration: underline;
+      }
+    }
+  }
+}

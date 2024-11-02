@@ -1,0 +1,131 @@
+// Features One
+.featureOne {
+  padding: 100px 0;
+  background-color: $bgLightClrTwo;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .imgSec {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .featureCardOne {
+    height: 100%;
+  }
+}
+
+// Test One
+.testOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .testCardOne {
+    height: 100%;
+  }
+
+  h6 {
+    margin-bottom: 24px;
+  }
+
+  .tabOne {
+    background-color: $bgLightClrTwo;
+
+    .tab-content {
+      p {
+        margin-bottom: 15px;
+        color: $primaryClr;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      ul {
+        list-style-type: decimal;
+        background-color: $bgLightClrTwo;
+        max-height: 300px;
+        overflow-y: auto;
+
+        li {
+          a {
+            color: $titleClr;
+
+            &:hover {
+              color: $primaryClr;
+              text-decoration: underline;
+            }
+          }
+
+          + li {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Class One
+.classOne {
+  background-color: darken($primaryClr, 50%);
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    h6 {
+      color: $primaryClr;
+    }
+
+    h1 {
+      color: $defenceClr;
+    }
+  }
+
+  .classCardOne {
+    height: 100%;
+  }
+}
+
+// Interview One
+.interviewOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .interviewCardOne {
+    height: 100%;
+  }
+}
+
+// About One
+.aboutOne {
+  padding: 100px 0;
+  background-color: $bgLightClrTwo;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
