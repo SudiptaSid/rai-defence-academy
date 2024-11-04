@@ -1,13 +1,292 @@
-<?php include 'include/header.php'; ?>
+<!DOCTYPE html>
+<html lang="">
 
-<!-- Banner -->
-<section class="innerBanner" style="background-image: url(images/hero/2.jpg);">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>RAI Defence Academy</title>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loaderWrapper">
+        <div class="loader">
+            <div class="inner innerOne"></div>
+            <div class="inner innerTwo"></div>
+            <div class="inner innerThree"></div>
+        </div>
+    </div>
+
+    <!-- Top Header -->
+    <div class="topHeader">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="leftSec">
+                        <p>
+                            <em class="ri ri-map-2-line"></em> Uttar Pradesh, India
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="rightSec">
+                        <li>
+                            <a href="tel:+91-98765-43210">
+                                <em class="ri ri-phone-line"></em> +91-98765-43210
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@raidefenceacademy.com">
+                                <em class="ri ri-mail-line"></em> info@raidefenceacademy.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbarArea" id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.php">
+                    <img src="images/logoW.png" alt="">
+                </a>
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
+                    aria-controls="navbarOffcanvas">
+                    <span class="burger-menu">
+                        <span class="topBar"></span>
+                        <span class="middleBar"></span>
+                        <span class="bottomBar"></span>
+                    </span>
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="index.php" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="mission.php" class="nav-link">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="dropdown-toggle nav-link">Officer's Course</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="courseDetails.php" class="nav-link">NDA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="courseDetails.php" class="nav-link">CDS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="courseDetails.php" class="nav-link">AFCAT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="courseDetails.php" class="nav-link">CAPF</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="agniveer.php" class="nav-link">Agniveer Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.php" class="nav-link">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.php" class="nav-link">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="othersOption">
+                        <a class="sidebarToggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
+                            aria-controls="navbarOffcanvas">
+                            <em class="ri ri-menu-2-line"></em>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="responsiveNavbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+            <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <em class="ri-close-line"></em>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="navbarAccordion">
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon active" href="index.php">Home</a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="mission.php">Mission</a>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseService" aria-expanded="false" aria-controls="collapseService">
+                        Officer's Course
+                    </button>
+                    <div id="collapseService" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                        <div class="accordion-body">
+                            <div class="accordion" id="navbarAccordion7">
+                                <div class="accordion-item">
+                                    <a href="courseDetails.php" class="accordion-link">NDA</a>
+                                </div>
+                                <div class="accordion-item">
+                                    <a href="courseDetails.php" class="accordion-link">CDS</a>
+                                </div>
+                                <div class="accordion-item">
+                                    <a href="courseDetails.php" class="accordion-link">AFCAT</a>
+                                </div>
+                                <div class="accordion-item">
+                                    <a href="courseDetails.php" class="accordion-link">CAPF</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="agniveer.php">Agniveer Courses</a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="blog.php">Blogs</a>
+                </div>
+                <div class="accordion-item">
+                    <a class="accordion-button without-icon" href="contact.php">Contact Us</a>
+                </div>
+            </div>
+            <div class="offcanvas-contact-info">
+                <div class="copyright">
+                    © RAI Defence Academy 2024 All right reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Home Hero -->
+<section class="homeHero">
+    <div class="owl-carousel owl-theme heroHomeSlider">
+        <div>
+            <img src="images/hero/1.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/hero/2.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/hero/3.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/hero/4.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Features One -->
+<section class="featureOne">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-12 offset-lg-1 text-center">
-                <div class="sectionTitle">
-                    <h2>Missione</h2>
-                    <p class="paraLg">We are a global IT service provider</p>
+        <div class="row gap-y3">
+            <div class="col-12">
+                <div class="sectionTitle text-center">
+                    <h6>RAI Defence Academy</h6>
+                    <h1>What's New</h1>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row gap-y2">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="imgSec">
+                            <img src="images/about/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="row gap-y1">
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            Download Aditya Srivastava, AIR 1, UPSC CSE 2023 answer copies
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            Welcome to Vision Publication, Igniting Passion for Knowledge, Explore our
+                                            Latest Releases
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            UPSC Toppers Preparation Approach and Strategies
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            Effective Ethics answer writing Approach and Strategies
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            BENGALURU Open Session, 15 Sept, 4 PM, Ace UPSC CSE 2025 with Expert
+                                            Strategies,
+                                            VisionIAS Bengaluru, Click here to know more register
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="featureCardOne">
+                                    <h6 class="m-0">
+                                        <em class="ri ri-download-2-line"></em>
+                                        <a href="#">
+                                            VisionIAS now in Bengaluru, GS Foundation Course: 23 Sep, 8 AM and 5 PM,
+                                            Prelims and
+                                            Mains Test Series Mentoring, Click here to know more register
+                                        </a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 offset-lg-2">
+                <div class="sectionTitle text-center">
+                    <h4>
+                        India's <span>Top Coaching Institute</span> for UPSC CSE
+                    </h4>
+                    <p>
+                        We provide comprehensive General Studies Foundation Course, Prelims & Mains Test Series,
+                        One-to-One Mentorship, Current Affairs and much more to help you achieve your IAS Dream.
+                    </p>
                 </div>
             </div>
         </div>
@@ -20,10 +299,8 @@
         <div class="row gap-y3">
             <div class="col-12">
                 <div class="sectionTitle text-center">
-                    <h6><span>RAI</span> Defence Academy</h6>
-                    <h1>
-                        Test <span>Series</span>
-                    </h1>
+                    <h6>RAI Defence Academy</h6>
+                    <h1>Test Series</h1>
                     <p>
                         Test series is the hallmark of the of Vision IAS. Every year thousands of students utilise
                         Vision IAS test series based on INNOVATIVE ASSESSMENT SYSTEM™ to improve their scores. The
@@ -502,29 +779,390 @@
     </div>
 </section>
 
-<!-- About One -->
-<section class="aboutOne">
+<!-- Class One -->
+<section class="classOne">
     <div class="container">
-        <div class="row align-items-center gap-y2">
-            <div class="col-md-7">
-                <div class="sectionTitle">
-                    <h6><span>RAI</span> Defence Academy</h6>
-                    <h1>About Us</h1>
+        <div class="row gap-y3">
+            <div class="col-12">
+                <div class="sectionTitle text-center">
+                    <h6>RAI Defence Academy</h6>
+                    <h1>Our Classroom</h1>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row gap-y2">
+                    <div class="col-md-4">
+                        <div class="classCardOne">
+                            <div class="title">
+                                Foundation Course 2025 <br>
+                                (Without Pre Foundation classes)
+                            </div>
+                            <div class="content">
+                                <div class="courseName">General Studies Prelims & Mains</div>
+                                <div class="icon">
+                                    <em class="ri ri-translate-2"></em> English
+                                </div>
+                                <p>
+                                    <span>Offline Fee - ₹2,10,000</span>
+                                    <span>Online Fee - ₹1,50,000</span>
+                                </p>
+                                <hr>
+                                <h6>Regular Batch Date</h6>
+                                <ul>
+                                    <li>
+                                        <span>Aug 31, 2024, 5:00 PM</span>
+                                        <span>Aug 29, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 27, 2024, 9:00 AM</span>
+                                        <span>Aug 17, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 14, 2024, 1:00 PM</span>
+                                        <span>Aug 12, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 31, 2024, 5:00 PM</span>
+                                        <span>July 30, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 29, 2024, 1:00 PM</span>
+                                        <span>July 18, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 16, 2024, 1:00 PM</span>
+                                        <span>July 13, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 5, 2024, 9:00 AM</span>
+                                        <span>June 26, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 20, 2024, 5:00 PM</span>
+                                        <span>June 14, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 4, 2024, 9:00 AM</span>
+                                        <span>May 17, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>May 9, 2024, 9:00 AM</span>
+                                        <span>Apr 30, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Apr 11, 2024, 9:00 AM</span>
+                                        <span>Mar 21, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Mar 12, 2024, 9:00 AM</span>
+                                        <span>Feb 28, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Feb 23, 2024, 9:00 AM</span>
+                                        <span>Feb 9, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Jan 16, 2024, 9:00 AM</span>
+                                        <span>Nov 17, 2023, 9:00 AM</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="btnSec">
+                                    <a href="#">Click to Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="classCardOne">
+                            <div class="title">
+                                Foundation Course 2025 <br>
+                                (Without Pre Foundation classes)
+                            </div>
+                            <div class="content">
+                                <div class="courseName">GTB Nagar Classroom</div>
+                                <div class="icon">
+                                    <em class="ri ri-translate-2"></em> English
+                                </div>
+                                <p>
+                                    <span>Offline Fee - ₹2,10,000</span>
+                                    <span>Online Fee - ₹1,50,000</span>
+                                </p>
+                                <hr>
+                                <h6>Regular Batch Date</h6>
+                                <ul>
+                                    <li>
+                                        <span>Aug 31, 2024, 5:00 PM</span>
+                                        <span>Aug 29, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 27, 2024, 9:00 AM</span>
+                                        <span>Aug 17, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 14, 2024, 1:00 PM</span>
+                                        <span>Aug 12, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 31, 2024, 5:00 PM</span>
+                                        <span>July 30, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 29, 2024, 1:00 PM</span>
+                                        <span>July 18, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 16, 2024, 1:00 PM</span>
+                                        <span>July 13, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 5, 2024, 9:00 AM</span>
+                                        <span>June 26, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 20, 2024, 5:00 PM</span>
+                                        <span>June 14, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 4, 2024, 9:00 AM</span>
+                                        <span>May 17, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>May 9, 2024, 9:00 AM</span>
+                                        <span>Apr 30, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Apr 11, 2024, 9:00 AM</span>
+                                        <span>Mar 21, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Mar 12, 2024, 9:00 AM</span>
+                                        <span>Feb 28, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Feb 23, 2024, 9:00 AM</span>
+                                        <span>Feb 9, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Jan 16, 2024, 9:00 AM</span>
+                                        <span>Nov 17, 2023, 9:00 AM</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="btnSec">
+                                    <a href="#">Click to Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="classCardOne">
+                            <div class="title">
+                                Foundation Course 2026 <br>
+                                (Without Pre Foundation classes)
+                            </div>
+                            <div class="content">
+                                <div class="courseName">General Studies Prelims & Mains</div>
+                                <div class="icon">
+                                    <em class="ri ri-translate-2"></em> English
+                                </div>
+                                <p>
+                                    <span>Offline Fee - ₹2,10,000</span>
+                                    <span>Online Fee - ₹1,50,000</span>
+                                </p>
+                                <hr>
+                                <h6>Regular Batch Date</h6>
+                                <ul>
+                                    <li>
+                                        <span>Aug 31, 2024, 5:00 PM</span>
+                                        <span>Aug 29, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 27, 2024, 9:00 AM</span>
+                                        <span>Aug 17, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Aug 14, 2024, 1:00 PM</span>
+                                        <span>Aug 12, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 31, 2024, 5:00 PM</span>
+                                        <span>July 30, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 29, 2024, 1:00 PM</span>
+                                        <span>July 18, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 16, 2024, 1:00 PM</span>
+                                        <span>July 13, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>July 5, 2024, 9:00 AM</span>
+                                        <span>June 26, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 20, 2024, 5:00 PM</span>
+                                        <span>June 14, 2024, 9:00 AM</span>
+                                    </li>
+                                    <li>
+                                        <span>June 4, 2024, 9:00 AM</span>
+                                        <span>May 17, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>May 9, 2024, 9:00 AM</span>
+                                        <span>Apr 30, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Apr 11, 2024, 9:00 AM</span>
+                                        <span>Mar 21, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Mar 12, 2024, 9:00 AM</span>
+                                        <span>Feb 28, 2024, 5:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Feb 23, 2024, 9:00 AM</span>
+                                        <span>Feb 9, 2024, 1:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <span>Jan 16, 2024, 9:00 AM</span>
+                                        <span>Nov 17, 2023, 9:00 AM</span>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <div class="btnSec">
+                                    <a href="#">Click to Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <p>Online classes* - Students can attend classes through live streaming at their home also. – For
+                    enquiry, please call - 8468022022 / 9019066066 </p>
+                <a href="#" class="btn btnPrimary">View all Classes</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interview One -->
+<section class="interviewOne">
+    <div class="container">
+        <div class="row gap-y3">
+            <div class="col-12">
+                <div class="sectionTitle text-center">
+                    <h6>RAI Defence Academy</h6>
+                    <h1>Interview</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eius laudantium, blanditiis
-                        laborum reprehenderit illo facere fugiat ducimus architecto numquam libero aperiam, vero
-                        corrupti omnis quis necessitatibus. Consequatur possimus nisi optio suscipit nihil provident
-                        porro, vel deserunt voluptate unde sit neque quo maxime. Quibusdam corporis nisi magnam harum.
-                        Consequuntur, accusamus?
+                        Our program provides a dedicated support system for holistic personality development of the
+                        candidate to give him the confidence to face the interview board successfully.
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-1">
-                <img src="images/about/1.jpg" alt="">
+            <div class="col-12">
+                <div class="row gap-y2">
+                    <div class="col-md-4 col-12">
+                        <div class="interviewCardOne">
+                            <h5>Features</h5>
+                            <p>
+                                DAF analysis session with senior faculty members of Vision IAS <br>
+                                Mock Interview Session with Ex-Bureaucrats/Educationists <br>
+                                Interaction with Previous toppers and Serving bureaucrats <br>
+                                Performance Evaluation and Feedback
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="interviewCardOne">
+                            <h5>Program Details</h5>
+                            <p>
+                                Personality Test Program Fee Rs. 500 (Rs. 250 for Vision IAS Students) <br>
+                                Admissions Open <br>
+                                <a href="#">Click Here to Register</a><br>
+                                <a href="#">Click Here for Details</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="interviewCardOne">
+                            <h5>Important Instructions</h5>
+                            <p>
+                                For queries regarding DAF analysis and Mock interview contact at 7042413505, 9354559299
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="row"></div>
+<!-- Blog -->
+<section class="blogOne">
+    <div class="container">
+        <div class="row gap-y2">
+            <div class="col-12">
+                <div class="sectionTitle text-center">
+                    <h6>RAI Defence Academy</h6>
+                    <h1>Get Every Single Updates</h1>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row gap-y2">
+                    <div class="col-md-4">
+                        <div class="blogCardOne">
+                            <div class="imgSec">
+                                <img src="images/blog/1.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="meta">
+                                    <em class="ri ri-user-2-line"></em> Michael K. Steven
+                                </span>
+                                <h5>
+                                    <a href="#">Make Honest Design Work As For Digital Business.</a>
+                                </h5>
+                                <a href="" class="btn btnPrimary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blogCardOne">
+                            <div class="imgSec">
+                                <img src="images/blog/2.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="meta">
+                                    <em class="ri ri-user-2-line"></em> Michael K. Steven
+                                </span>
+                                <h5>
+                                    <a href="#">Should You Do When A Webs Design Trend Becomes</a>
+                                </h5>
+                                <a href="" class="btn btnPrimary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blogCardOne">
+                            <div class="imgSec">
+                                <img src="images/blog/3.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <span class="meta">
+                                    <em class="ri ri-user-2-line"></em> Michael K. Steven
+                                </span>
+                                <h5>
+                                    <a href="#">How To Space And Kern Punct Marks Other Symbols</a>
+                                </h5>
+                                <a href="" class="btn btnPrimary">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -580,4 +1218,128 @@
     </div>
 </section>
 
-<?php include 'include/footer.php'; ?>
+<!-- Footer -->
+<footer class="mainFooter" style="background-image: url('images/bg/1.jpg');">
+    <div class="footerTop">
+        <div class="container">
+            <div class="row gap-y2">
+                <div class="col-md-3">
+                    <div class="about">
+                        <a href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <p>
+                            We are dedicated to helping businesses and individuals navigate the complex world of Digital
+                            Agency
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 mb-3 mb-md-0">
+                    <h6 class="mb-4">Quick Links</h6>
+                    <ul>
+                        <li>
+                            <a href="#.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#.html">Service</a>
+                        </li>
+                        <li>
+                            <a href="#.html">Agniveer Courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-3 mb-md-0">
+                    <h6 class="mb-4">Officer's Course</h6>
+                    <ul>
+                        <li>
+                            <a href="#.html">NDA</a>
+                        </li>
+                        <li>
+                            <a href="#.html">CDS</a>
+                        </li>
+                        <li>
+                            <a href="#.html">AFCAT</a>
+                        </li>
+                        <li>
+                            <a href="#.html">CAPF</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-3 mb-md-0">
+                    <h6 class="mb-4">Get to Know us</h6>
+                    <ul>
+                        <li>
+                            <a href="#.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#.html">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="addressInfo">
+                        <address>
+                            Uttar Pradesh, India
+                        </address>
+                        <h5 class="mb-3">
+                            <a href="tel:+91-98765-43210">
+                                <em class="ri ri-phone-fill mr-1"></em> +91-98765-43210
+                            </a>
+                        </h5>
+                        <h5 class="mb-3">
+                            <a href="mailto:info@raidefenceacademy.com">
+                                <em class="ri ri-mail-fill mr-1"></em> info@raidefenceacademy.com
+                            </a>
+                        </h5>
+                        <div class="socialList">
+                            <a href="#" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" title="instagram">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" title="pinterest">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright © 2024 <b>RAI Defence Academy</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back To Top -->
+<a class="backTop" href="javascript:void(0);">
+    <em class="ri ri-arrow-up-line"></em>
+</a>
+
+<!-- Jquery min -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Bundle -->
+<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Owl Carousel -->
+<script src="vendors/OwlCarousel/js/owl.carousel.min.js"></script>
+
+<!-- Video Player -->
+<script src="vendors/videoPlayer/video.js"></script>
+
+<!-- Default -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
